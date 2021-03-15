@@ -1,0 +1,39 @@
+fastq_file1:
+  class: File
+  location: "./data/inputs/SRR6790859.fastq"
+  format: "http://edamontology.org/format_1930"
+
+fastq_file2:
+  class: File
+  location: "./data/inputs/SRR6790926.fastq"
+  format: "http://edamontology.org/format_1930"
+
+fastq_file3:
+  class: File
+  location: "./data/inputs/SRR6790950.fastq"
+  format: "http://edamontology.org/format_1930"
+
+fastq_file4:
+  class: File
+  location: "./data/inputs/SRR6790970.fastq"
+  format: "http://edamontology.org/format_1930"
+
+indices_folder:
+  class: Directory
+  location: "./data/references/dm3/bowtie_indices"
+annotation_file:
+  class: File
+  location: "./data/references/dm3/refgene.tsv"
+  format: "http://edamontology.org/format_3475"
+chrom_length:
+  class: File
+  location: "./data/references/dm3/chrNameLength.txt"
+  format: "http://edamontology.org/format_2330"
+clip_3p_end: 0
+clip_5p_end: 0
+remove_duplicates: true
+exp_fragment_size: 150
+force_fragment_size: false
+broad_peak: false
+threads: 4
+genome_size: "1.2e8"
